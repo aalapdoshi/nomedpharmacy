@@ -1,0 +1,41 @@
+/* ************************** Badges ******************************** */
+/* ****************************************************************** */
+
+
+
+// Base class
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  @include font-size($badge-font-size);  
+  color: $badge-font-color;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: $badge-background-color;
+  border-radius: 10px;
+
+  // Empty badges collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for badges in buttons
+/*
+  .button & {
+    position: relative;
+    top: -1px;
+
+  }*/
+}
+
+// Hover state, but only for links
+a.badge {
+  &:hover,
+  &:focus {
+    color: $badge-link-hover-font-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

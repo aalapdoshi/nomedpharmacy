@@ -1,0 +1,169 @@
+/* *********************** BUTTONS **************************** */
+/* ********************************************************** */
+
+/**
+ *
+ * =======================================================================
+   Basic button styling. Not to be used for markup.
+ * =======================================================================
+ */
+.button{
+	display: block;
+	color: white !important;
+	text-decoration: none !important;		
+	text-align: center;
+	zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    font-family: $button-font-family;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*csslint outline-none:false*/
+
+.button-active,
+.button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000\9;
+}
+
+
+.button[disabled],
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:focus,
+.button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.button:hover {
+	text-decoration: none;
+	background-color: $secondary-color;
+	cursor: pointer;
+}
+
+.button-hidden {
+    display: none;
+}
+
+.button .fa{
+	@include margin-right(.5);
+}
+
+// Separating out button sizes. By default, the button sizes are the same but on screens greater than $md-screen-breakpoint, they diverge into different sizes
+.button-size, .button-size-small{
+	padding: .75em 1em;
+	@include margin-bottom(1);
+	@include border-radius($border-radius);	
+	@include font-size(1.2);
+}
+
+.outline-button:hover, .small-outline-button:hover {
+	text-decoration: none;
+	background-color: $special-background-color;
+	cursor: pointer;
+}
+
+/**
+ *
+ * =======================================================================
+   Various button classes to be used in markup
+ * =======================================================================
+ */
+.primary-button{
+	@extend .button;
+	@extend .button-size;
+	background: $primary-color;
+}
+
+.special-button{
+	@extend .button;
+	@extend .button-size;
+	background: $special-color;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.outline-button{
+	@extend .button;
+	@extend .button-size;
+	background: none;
+	border: solid 1px $primary-color;
+	color: $primary-color !important;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.small-primary-button{
+	@extend .button;
+	@extend .button-size-small;
+	background: $primary-color;
+}
+
+.small-special-button{
+	@extend .button;
+	@extend .button-size-small;
+	background: $special-color;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.small-outline-button{
+	@extend .button;
+	@extend .button-size-small;
+	background: none;
+	border: solid 1px $primary-color !important;
+	color: $primary-color !important;
+	vertical-align: middle;
+	letter-spacing: 1px;
+} 
+
+/**
+ *
+ * =======================================================================
+   Responsive styling
+ * =======================================================================
+ */
+@media screen and (min-width: $md-screen-breakpoint){
+
+	/*By default the button is set to be a block but on screens bigger than $md-screen-breakpoint, the button changes to an inline block*/
+	.button{
+		display: inline-block;
+		margin-bottom: 0;
+	}	
+	
+	/*By default, the button sizes are the same but on screens greater than $md-screen-breakpoint, they diverge into different sizes*/
+	.button-size-small{
+		padding: .5em 0.625em;
+		@include margin-bottom(0.7);
+		@include border-radius($border-radius);	
+		@include font-size(1);
+	}
+}
+
+

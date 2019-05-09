@@ -1,0 +1,20 @@
+// Mixins
+@import 'mixins/variables';
+@import 'mixins/functions';
+
+// Partials
+@import 'partials/base';
+@import 'partials/utilities';
+@import 'partials/grid';
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/forms';
+@import 'partials/buttons';
+@import 'partials/tags';
+@import 'partials/badges';
+@import 'partials/visibililty';
+@import 'partials/feedback-blocks';
+@import 'partials/pagination';
+@import 'partials/login';
+//@import 'vendors/font-awesome/scss/font-awesome.scss'; //Icon font
+@import 'partials/animations.scss';

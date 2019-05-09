@@ -1,0 +1,89 @@
+/* *********************** LOGIN *********************** */
+/* ***************************************************** */
+.login{
+	background-color:$neutral-background-color;
+}
+
+.login .logo{
+	@include margin-top(2);
+	background: url(../../../images/generic-logo.png) no-repeat scroll 50% 0 transparent;
+	height:75px;
+	@include center();
+}
+
+.login h1{
+	@include margin-top(2);
+	text-align: center;
+	color: $secondary-font-color;
+	font-weight:300;
+	display:none;
+}
+
+
+.login-content{
+	@include margin-top(0);
+}
+.login-content .form-stacked label{
+	@include margin-bottom(0.50);
+	color: #111;
+	font-weight:normal;	
+}
+.login-content .password input[type=password]{
+	display: inline-block;
+}
+.login-content .password .password-show{
+	display: inline-block;
+	@include font-size(0.9);
+	color:$secondary-font-color;
+	text-align: center;
+}
+.login-content .form-stacked .primary-button{
+	display: block;
+	width: 100%;
+	@include margin-top(0);
+}
+
+.login .login-links-container{
+	@include margin-top(2.2);
+	text-align: center;
+}
+.login .login-links-container a{
+	display:block;
+	text-align: center;
+}
+
+.login footer{
+	text-align: center;	
+	@include font-size(0.6);
+	color:#999;
+}
+.login footer div:first-child a{
+	@include font-size(0.9);
+	color:#999;
+}
+
+
+//**** RESPONSIVENESS **//
+
+//small screen sizes
+@media only screen and (max-width : $md-screen-breakpoint) {
+	.password .field-help-text{
+		display:inline-block;
+		float:right;
+		@include margin-top(0.25);
+	}
+}
+//medium screen sizes and up
+@media screen and (min-width: $md-screen-breakpoint){
+	.login h1{
+		display:block;
+	}
+
+	.login-content .password .password-show{
+		@include margin-left(1);
+	}	
+	
+	.login .login-links-container a{
+		display:inline;
+	}
+}

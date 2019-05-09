@@ -1,0 +1,57 @@
+/* ************************** UTILITIES **************************** */
+/* ***************************************************************** */
+
+//Center element in a vertical container
+.vertical-center-container{
+	display: -webkit-box !important; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box !important;    /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox !important; /* TWEENER - IE 10 */
+	display: -webkit-flex !important; 
+	display: flex !important;
+}
+.vertical-center{
+	padding: 1em 0.5em;
+    text-align: center;
+    margin: auto;
+}
+
+//Text align
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+
+//Add background color to a block element
+.neutral-background,
+.special-background{
+	@include padding(1);	
+}
+.neutral-background{
+	background-color: $neutral-background-color;	
+}
+.special-background{
+	background-color: $special-background-color;
+}
+
+//Font colors
+.primary-font-color{
+	color:$primary-color;
+}
+
+//Divider
+.divider{
+	border-top: dotted 1px $border-color;
+	@include margin-top(0.5);
+	@include margin-bottom(0.5);
+}
+
+//Float elements
+.float-left{
+	float:left;	
+}
+.float-right{
+	float:right;
+}
