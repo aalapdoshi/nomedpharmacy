@@ -451,24 +451,20 @@ ol ol li:last-child {margin-bottom:0;}
 .pull-quote {
   position: relative;
   padding: 1em;
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 .pull-quote:before,
 .pull-quote:after {
   height: 1em;
-  opacity: 0.15;
   position: absolute;
-  font-size: 4em;
-  color: #dc976e;
+  font-size: 8em;
+  color: $primary-color;
 }
 .pull-quote:before {
   content: '“';
-  top: 0;
+  top: -100px;
   left: 0;
-}
-.pull-quote:after {
-  content: '”';
-  bottom: 0;
-  right: 0;
 }
 
 /**
@@ -578,11 +574,16 @@ address{
  /**
   *
   * =======================================================================
-    Victors
+    Emphasis
   * =======================================================================
   */
-  .victors{
+  .emphasis{
+    margin-left: 2rem;
+    display: block;
+    line-height: 100%;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Times New Roman';
+    @include font-size(2);
+    text-transform: lowercase;
+    font-family: $emphasis-font-family;
   }

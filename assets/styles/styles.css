@@ -30,12 +30,11 @@
  * =======================================================================
  */
 /*Force word break in long words*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,700|Playfair+Display|Caveat);
 html {
   font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  max-width: 71.111em;
   margin: 0 auto;
   /*background: #eee; */
   /* Fills the page */
@@ -97,7 +96,7 @@ main > section {
   background-color: #D7E5F1; }
 
 .primary-font-color {
-  color: #667780; }
+  color: purple; }
 
 .divider {
   border-top: dotted 1px #ccc;
@@ -590,7 +589,7 @@ display: -ms-flexbox;
   *letter-spacing: normal;
   *word-spacing: -.43em;
   text-rendering: optimizespeed;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Muli", Arial, sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
@@ -617,7 +616,7 @@ display: -ms-flexbox;
  * =======================================================================
  */
 .primary-color {
-  background: #667780; }
+  background: purple; }
 
 .secondary-color {
   background: #e68968; }
@@ -700,7 +699,7 @@ html, button, input, select, textarea,
  *
  */
 html {
-  font: normal 112.5% /1.9 "Roboto", Arial, sans-serif;
+  font: normal 112.5% /1.9 "Muli", Arial, sans-serif;
   /* base font size 18px with 1.65 line-height */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -739,7 +738,7 @@ h6 {
   text-rendering: optimizeLegibility;
   /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
   color: #222;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Playfair Display", Arial, sans-serif;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -1057,25 +1056,21 @@ ol ol li:last-child {
  */
 .pull-quote {
   position: relative;
-  padding: 1em; }
+  padding: 1em;
+  margin-top: 4em;
+  margin-bottom: 2em; }
 
 .pull-quote:before,
 .pull-quote:after {
   height: 1em;
-  opacity: 0.15;
   position: absolute;
-  font-size: 4em;
-  color: #dc976e; }
+  font-size: 8em;
+  color: purple; }
 
 .pull-quote:before {
   content: '“';
-  top: 0;
+  top: -100px;
   left: 0; }
-
-.pull-quote:after {
-  content: '”';
-  bottom: 0;
-  right: 0; }
 
 /**
  *
@@ -1140,7 +1135,7 @@ a {
   color: #0362cf;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #667780;
+    color: purple;
     text-decoration: underline; }
 
 /**
@@ -1170,13 +1165,19 @@ address {
 /**
   *
   * =======================================================================
-    Victors
+    Emphasis
   * =======================================================================
   */
-.victors {
+.emphasis {
+  margin-left: 2rem;
+  display: block;
+  line-height: 100%;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'Times New Roman'; }
+  font-size: 2rem;
+  font-size: 36px;
+  text-transform: lowercase;
+  font-family: "Caveat", Arial, sans-serif; }
 
 /* *********************** FORMS **************************** */
 /* ********************************************************** */
@@ -1218,7 +1219,7 @@ textarea {
   padding: 0.8em 0.9em;
   display: inline-block;
   border: 2px solid #999;
-  border-radius: 5px;
+  border-radius: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1232,7 +1233,7 @@ input:not([type]) {
   padding: 0.8em 0.9em;
   display: inline-block;
   border: 2px solid #999;
-  border-radius: 5px;
+  border-radius: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1288,7 +1289,7 @@ textarea:focus {
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-  border-color: #667780; }
+  border-color: purple; }
 
 /*
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
@@ -1298,13 +1299,13 @@ input:not([type]):focus {
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-  border-color: #667780; }
+  border-color: purple; }
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: thin dotted #333;
-  outline: 1px auto #667780; }
+  outline: 1px auto purple; }
 
 /**
  *
@@ -1414,16 +1415,16 @@ label.block-label,
   padding: .8em .9em;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   font-size: 1em !important;
   font-size: 18px !important;
   font-weight: normal !important; }
 
 label.block-label:hover {
-  border: 2px solid #667780;
+  border: 2px solid purple;
   cursor: pointer; }
 
 label.block-label.inline-block-label {
@@ -1451,7 +1452,7 @@ legend {
   width: 100%;
   padding: 0.3em 0 0.3em 0.3em;
   background-color: #f2f2f2;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Playfair Display", Arial, sans-serif;
   font-size: 1.2222rem;
   font-size: 21.9996px;
   margin-bottom: 1.35rem;
@@ -1523,10 +1524,10 @@ Class currency field provides a way to use a add a currency field into your stac
 .currency-field span {
   display: inline-block;
   border: 2px solid #999;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   padding: 0.8em 0.9em;
   line-height: 20px;
   margin-bottom: 0.25rem;
@@ -1667,11 +1668,11 @@ input.input-rounded,
 
 .form-group input:first-child {
   top: 1px;
-  border-radius: 5px 5px 0 0; }
+  border-radius: 20px 20px 0 0; }
 
 .form-group input:last-child {
   top: -2px;
-  border-radius: 0 0 5px 5px; }
+  border-radius: 0 0 20px 20px; }
 
 /**
  *
@@ -1812,6 +1813,7 @@ input.input-rounded,
   color: white !important;
   text-decoration: none !important;
   text-align: center;
+  text-transform: uppercase;
   zoom: 1;
   line-height: normal;
   white-space: nowrap;
@@ -1829,7 +1831,7 @@ input.input-rounded,
   /*IE 6/7/8*/
   border: none rgba(0, 0, 0, 0);
   /*IE9 + everything else*/
-  font-family: "Helvetica", Arial, sans-serif; }
+  font-family: "Muli", Arial, sans-serif; }
 
 /* Firefox: Get rid of the inner focus border */
 .button::-moz-focus-inner, .primary-button::-moz-focus-inner, .special-button::-moz-focus-inner, .outline-button::-moz-focus-inner, .small-primary-button::-moz-focus-inner, .small-special-button::-moz-focus-inner, .small-outline-button::-moz-focus-inner {
@@ -1879,10 +1881,10 @@ input.input-rounded,
   padding: .75em 1em;
   margin-bottom: 1rem;
   margin-bottom: 18px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   font-size: 1.2rem;
   font-size: 21.6px; }
 
@@ -1898,7 +1900,7 @@ input.input-rounded,
  * =======================================================================
  */
 .primary-button {
-  background: #667780; }
+  background: purple; }
 
 .special-button {
   background: #e07477;
@@ -1907,13 +1909,13 @@ input.input-rounded,
 
 .outline-button {
   background: none;
-  border: solid 1px #667780;
-  color: #667780 !important;
+  border: solid 1px purple;
+  color: purple !important;
   vertical-align: middle;
   letter-spacing: 1px; }
 
 .small-primary-button {
-  background: #667780; }
+  background: purple; }
 
 .small-special-button {
   background: #e07477;
@@ -1922,8 +1924,8 @@ input.input-rounded,
 
 .small-outline-button {
   background: none;
-  border: solid 1px #667780 !important;
-  color: #667780 !important;
+  border: solid 1px purple !important;
+  color: purple !important;
   vertical-align: middle;
   letter-spacing: 1px; }
 
@@ -1940,15 +1942,15 @@ input.input-rounded,
     margin-bottom: 0; }
   /*By default, the button sizes are the same but on screens greater than $md-screen-breakpoint, they diverge into different sizes*/
   .button-size-small, .small-primary-button, .small-special-button, .small-outline-button {
-    padding: .5em 0.625em;
+    padding: .75em 1.25em;
     margin-bottom: 0.7rem;
     margin-bottom: 12.6px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-size: 18px; } }
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-size: 14.4px; } }
 
 /* ************************* TAGS *********************************** */
 /* ****************************************************************** */
@@ -1960,10 +1962,10 @@ input.input-rounded,
   margin: 0 .25em 0.25em 0;
   background-color: #f2f2f2;
   display: inline-block;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   white-space: nowrap; }
 
 .tag_highlighted {
@@ -2075,10 +2077,10 @@ a.badge:hover, a.badge:focus {
   font-size: 18px;
   padding: .6em 0 .6em 0;
   background-color: #f2f2f2;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   color: #484848;
   overflow: hidden;
   margin-bottom: 1.5rem;
@@ -2321,3 +2323,105 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
+
+.hero {
+  padding-top: 1rem;
+  padding-top: 18px;
+  padding-bottom: 6rem;
+  padding-bottom: 108px;
+  background: #00274c url(/assets/images/hero.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  .hero header .logo img {
+    height: 75px; }
+  .hero .text {
+    margin-top: 3rem;
+    margin-top: 54px; }
+    .hero .text .slogan {
+      font-family: "Caveat", Arial, sans-serif;
+      font-size: 4rem;
+      font-size: 72px; }
+    .hero .text .tagline {
+      font-weight: 500;
+      font-size: 1.2rem;
+      font-size: 21.6px; }
+
+.hero {
+  padding-top: 1rem;
+  padding-top: 18px;
+  padding-bottom: 6rem;
+  padding-bottom: 108px;
+  background: #00274c url(/assets/images/hero.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  .hero header .logo img {
+    height: 75px; }
+  .hero .text {
+    margin-top: 3rem;
+    margin-top: 54px; }
+    .hero .text .slogan {
+      font-family: "Caveat", Arial, sans-serif;
+      font-size: 4rem;
+      font-size: 72px; }
+    .hero .text .tagline {
+      font-weight: 500;
+      font-size: 1.2rem;
+      font-size: 21.6px; }
+
+.what-is-research {
+  border-top: solid 10px #24AAE1; }
+  .what-is-research .media {
+    background: #94d6f0 url(/assets/images/img-1.jpg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat; }
+  .what-is-research .content {
+    padding: 4em !important; }
+
+.medication-i-need {
+  border-top: solid 10px #8CC63F; }
+  .medication-i-need .media {
+    padding-top: 1rem;
+    padding-top: 18px;
+    padding-bottom: 6rem;
+    padding-bottom: 108px;
+    background: #00274c url(/assets/images/img-2.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 300px; }
+
+.diversity-in-research {
+  border-top: solid 10px #FCB040; }
+  .diversity-in-research .media {
+    background: #fee4be url(/assets/images/img-3.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat; }
+  .diversity-in-research .content {
+    padding: 4em !important; }
+
+.we-are-key {
+  border-top: solid 10px #24AAE1; }
+  .we-are-key .media {
+    padding-top: 1rem;
+    padding-top: 18px;
+    padding-bottom: 6rem;
+    padding-bottom: 108px;
+    background: #24AAE1 url(/assets/images/img-5.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 300px; }
+
+.how-can-i-get-involved {
+  border-top: solid 10px #8CC63F; }
+  .how-can-i-get-involved .media {
+    background: #c7e3a1 url(/assets/images/img-4.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat; }
+  .how-can-i-get-involved .content {
+    padding: 4em !important; }

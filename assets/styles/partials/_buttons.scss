@@ -10,8 +10,9 @@
 .button{
 	display: block;
 	color: white !important;
-	text-decoration: none !important;		
+	text-decoration: none !important;
 	text-align: center;
+	text-transform: uppercase;
 	zoom: 1;
     line-height: normal;
     white-space: nowrap;
@@ -79,7 +80,7 @@
 .button-size, .button-size-small{
 	padding: .75em 1em;
 	@include margin-bottom(1);
-	@include border-radius($border-radius);	
+	@include border-radius($border-radius);
 	@include font-size(1.2);
 }
 
@@ -141,7 +142,7 @@
 	color: $primary-color !important;
 	vertical-align: middle;
 	letter-spacing: 1px;
-} 
+}
 
 /**
  *
@@ -155,15 +156,13 @@
 	.button{
 		display: inline-block;
 		margin-bottom: 0;
-	}	
-	
+	}
+
 	/*By default, the button sizes are the same but on screens greater than $md-screen-breakpoint, they diverge into different sizes*/
 	.button-size-small{
-		padding: .5em 0.625em;
+		padding: .75em 1.25em;
 		@include margin-bottom(0.7);
-		@include border-radius($border-radius);	
-		@include font-size(1);
+		@include border-radius($border-radius);
+		@include font-size(.8);
 	}
 }
-
-

@@ -32,7 +32,7 @@ $badge-font-size:0.850;
  */
 
 //Primary colors. Mostly applied in buttons
-$primary-color: #667780;
+$primary-color: purple;
 $secondary-color: #e68968;
 $special-color: #e07477;
 $accent-color: #667780;
@@ -95,13 +95,14 @@ $label-color-10:#4d4d4d;
    Font families
  * =======================================================================
  */
-$primary-font-family: "Roboto",Arial,sans-serif;
-$header-font-family:  "Roboto",Arial,sans-serif;
-$button-font-family:  "Helvetica",Arial,sans-serif;
+$primary-font-family: "Muli",Arial,sans-serif;
+$header-font-family:  "Playfair Display",Arial,sans-serif;
+$button-font-family:  "Muli",Arial,sans-serif;
+$emphasis-font-family:  "Caveat",Arial,sans-serif;
 
 
 // Border radius
-$border-radius: 5px;
+$border-radius: 20px;
 $card-border-radius: 2px;
 
 /**

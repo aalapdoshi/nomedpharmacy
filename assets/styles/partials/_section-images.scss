@@ -1,0 +1,64 @@
+.what-is-research{
+  border-top: solid 10px #24AAE1;
+  .media{
+    background: lighten(#24AAE1, 25%) url(/assets/images/img-1.jpg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+  }
+  .content{
+    padding:4em !important;
+  }
+}
+
+.medication-i-need{
+  border-top: solid 10px #8CC63F;
+  .media{
+    @include padding-top(1);
+    @include padding-bottom(6);
+    background: #00274c url(/assets/images/img-2.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 300px;
+  }
+}
+
+.diversity-in-research{
+  border-top: solid 10px #FCB040;
+  .media{
+    background: lighten(#FCB040, 25%) url(/assets/images/img-3.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+  }
+  .content{
+    padding:4em !important;
+  }
+}
+
+.we-are-key{
+  border-top: solid 10px #24AAE1;
+  .media{
+    @include padding-top(1);
+    @include padding-bottom(6);
+    background: #24AAE1 url(/assets/images/img-5.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 300px;
+  }
+}
+
+.how-can-i-get-involved{
+  border-top: solid 10px #8CC63F;
+  .media{
+    background: lighten(#8CC63F, 25%) url(/assets/images/img-4.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+  }
+  .content{
+    padding:4em !important;
+  }
+}
