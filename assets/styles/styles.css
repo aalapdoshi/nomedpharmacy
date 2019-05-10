@@ -1177,7 +1177,14 @@ address {
   font-size: 2rem;
   font-size: 36px;
   text-transform: lowercase;
-  font-family: "Caveat", Arial, sans-serif; }
+  font-family: "Caveat", Arial, sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, transparent), color-stop(10%, rgba(146, 39, 143, 0.3)));
+  background-image: linear-gradient(180deg, transparent 65%, rgba(146, 39, 143, 0.3) 0);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  -webkit-transition: background-size .4s ease;
+  transition: background-size .4s ease; }
 
 /* *********************** FORMS **************************** */
 /* ********************************************************** */
@@ -2329,7 +2336,7 @@ Copyright (c) 2015 Daniel Eden
   padding-top: 18px;
   padding-bottom: 6rem;
   padding-bottom: 108px;
-  background: #00274c url(/assets/images/HERO.png);
+  background: #fdc572 url(/assets/images/HERO.png);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
@@ -2337,7 +2344,9 @@ Copyright (c) 2015 Daniel Eden
     height: 75px; }
   .hero .text {
     margin-top: 3rem;
-    margin-top: 54px; }
+    margin-top: 54px;
+    padding-left: 2rem;
+    padding-left: 36px; }
     .hero .text .slogan {
       font-family: "Caveat", Arial, sans-serif;
       font-size: 4rem;
@@ -2346,6 +2355,29 @@ Copyright (c) 2015 Daniel Eden
       font-weight: 500;
       font-size: 1.2rem;
       font-size: 21.6px; }
+
+@media screen and (max-width: 42.666em) {
+  .hero {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    padding-bottom: 54px;
+    background: #fdc572 url(/assets/images/HERO-mobile.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+    .hero header {
+      background-color: #fff; }
+      .hero header .logo img {
+        height: 60px; }
+      .hero header .small-primary-button {
+        font-size: 0.8rem;
+        font-size: 14.4px; }
+    .hero .text {
+      margin-top: 0rem;
+      margin-top: 0px;
+      padding-left: 1rem;
+      padding-left: 18px; }
+      .hero .text .tagline {
+        line-height: 125%; } }
 
 .what-is-research {
   border-top: solid 10px #24AAE1; }
@@ -2402,6 +2434,48 @@ Copyright (c) 2015 Daniel Eden
     background-repeat: no-repeat no-repeat; }
   .how-can-i-get-involved .content {
     padding: 4em !important; }
+
+@media screen and (max-width: 42.666em) {
+  .what-is-research .media {
+    background: #94d6f0 url(/assets/images/img-1.jpg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    height: 300px; }
+  .what-is-research .content {
+    padding: 3em !important; }
+  .medication-i-need .media {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #00274c url(/assets/images/img-2.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 275px; }
+  .diversity-in-research .media {
+    background: #fee4be url(/assets/images/img-3.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    height: 300px; }
+  .diversity-in-research .content {
+    padding: 3em !important; }
+  .we-are-key .media {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #24AAE1 url(/assets/images/img-5.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 150%;
+    background-position: 50% 50%;
+    height: 200px; }
+  .how-can-i-get-involved .media {
+    background: #c7e3a1 url(/assets/images/img-4.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    height: 300px; }
+  .how-can-i-get-involved .content {
+    padding: 3em !important; } }
 
 body > footer {
   border-top: solid 10px #FCB040;

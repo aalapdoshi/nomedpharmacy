@@ -1,7 +1,7 @@
 .hero{
   @include padding-top(1);
   @include padding-bottom(6);
-  background: #00274c url(/assets/images/HERO.png);
+  background: lighten(#FCB040,10%) url(/assets/images/HERO.png);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -12,6 +12,7 @@
   }
   .text{
     @include margin-top(3);
+    @include padding-left(2);
     .slogan{
       font-family: $emphasis-font-family;
       @include font-size(4);
@@ -19,6 +20,33 @@
     .tagline{
       font-weight: 500;
       @include font-size(1.2);
+    }
+  }
+}
+
+@media screen and (max-width: $md-screen-breakpoint){
+	.hero{
+    padding-top: 0;
+    @include padding-bottom(3);
+    background: lighten(#FCB040,10%) url(/assets/images/HERO-mobile.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    header{
+      background-color: #fff;
+      .logo{
+        img{height: 60px;}
+      }
+      .small-primary-button{
+        @include font-size(.8);
+      }
+    }
+    .text{
+      @include margin-top(0);
+      @include padding-left(1);
+      // color: #fff;
+      .tagline{
+        line-height: 125%;
+      }
     }
   }
 }

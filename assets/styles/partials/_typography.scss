@@ -586,4 +586,11 @@ address{
     @include font-size(2);
     text-transform: lowercase;
     font-family: $emphasis-font-family;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(65%,transparent),color-stop(10%,rgba(146,39,143,.30)));
+    background-image: linear-gradient(180deg,transparent 65%,rgba(146,39,143,.30) 0);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    -webkit-transition: background-size .4s ease;
+    transition: background-size .4s ease;
   }
