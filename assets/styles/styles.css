@@ -2347,29 +2347,6 @@ Copyright (c) 2015 Daniel Eden
       font-size: 1.2rem;
       font-size: 21.6px; }
 
-.hero {
-  padding-top: 1rem;
-  padding-top: 18px;
-  padding-bottom: 6rem;
-  padding-bottom: 108px;
-  background: #00274c url(/assets/images/hero.png);
-  background-size: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat; }
-  .hero header .logo img {
-    height: 75px; }
-  .hero .text {
-    margin-top: 3rem;
-    margin-top: 54px; }
-    .hero .text .slogan {
-      font-family: "Caveat", Arial, sans-serif;
-      font-size: 4rem;
-      font-size: 72px; }
-    .hero .text .tagline {
-      font-weight: 500;
-      font-size: 1.2rem;
-      font-size: 21.6px; }
-
 .what-is-research {
   border-top: solid 10px #24AAE1; }
   .what-is-research .media {
@@ -2425,3 +2402,24 @@ Copyright (c) 2015 Daniel Eden
     background-repeat: no-repeat no-repeat; }
   .how-can-i-get-involved .content {
     padding: 4em !important; }
+
+body > footer {
+  border-top: solid 10px #FCB040;
+  background-color: #171717;
+  padding-top: 2rem;
+  padding-top: 36px;
+  padding-right: 2rem;
+  padding-right: 36px;
+  padding-bottom: 2rem;
+  padding-bottom: 36px;
+  padding-left: 2rem;
+  padding-left: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  font-size: 13.5px; }
+  body > footer .nomed-logo {
+    height: 70px;
+    margin-bottom: 30px; }
+  body > footer .michr-logo {
+    width: 300px; }

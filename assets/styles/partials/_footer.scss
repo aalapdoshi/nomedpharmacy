@@ -1,0 +1,15 @@
+body > footer {
+  border-top: solid 10px #FCB040;
+  background-color: #171717;
+  @include padding(2);
+  text-align: center;
+  color: #fff;
+  @include font-size(.75);
+  .nomed-logo{
+    height: 70px;
+    margin-bottom: 30px;
+  }
+  .michr-logo{
+    width: 300px;
+  }
+}
